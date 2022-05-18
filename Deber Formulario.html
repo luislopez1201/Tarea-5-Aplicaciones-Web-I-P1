@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ingreso de Datos</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <main>
+      <form action="" method="get" id="formulario">
+        <div class="form">
+          <h1>Ingreso de Datos de Clientes</h1>
+          <label for="cedula">Cédula de Identificación:</label>
+          <div class="datos">  
+          <input type="text" name="" id="cedula"            
+            placeholder="Dígite su número de Cédula"/>      
+          </div>
+          <label for="apellidos">Apellidos:</label>
+          <div class="datos">  
+          <input type="text" name="" id="apellidos"
+          placeholder="Ingrese sus Apellidos"/>    
+          </div>
+          <label for="nombres">Nombres:</label>
+          <div class="datos"> 
+          <input type="text" name="" id="nombres" 
+          placeholder="Ingrese sus Nombres"/>         
+          </div>
+          <label for="">Estado Civil:</label>
+          <div class="datos"> 
+          <input type="radio" name="Estado" id="situacion" value="Soltero"/>
+          Soltero <br/>
+          <input type="radio" name="Estado" id="situacion" value="Casado"/>
+          Casado <br/>
+          <input type="radio" name="Estado" id="situacion" value="Divorciado"/>
+          Divorciado <br/>
+          <input type="radio" name="Estado" id="situacion" value="Viudo"/>
+          Viudo <br/>        
+          </div>
+          <label for="">Sexo:</label>
+          <div class="datos"> 
+          <input type="radio" name="Sex" id="sexo" value="Masculino"/>
+          Masculino<br/>
+          <input type="radio" name="Sex" id="sexo" value="Femenino"/>
+          Femenino<br/>          
+          </div>
+          <label for="">Cuidad:</label>
+          <div class="datos">
+              <input type="text" name="" id="residencia"
+              placeholder="Ingrese su lugar de Residencia"/>           
+          </div>
+          <label for="">Teléfono/Celular:</label>
+          <div class="datos">
+              <input type="text" name="" id="telefono"
+              placeholder="Dígite su número Telefónico"/>           
+          </div>
+          <label for="">Dirección:</label>
+          <div class="datos">
+            <input type="text" name="" id="direccion"
+              placeholder="Ingrese su Dirección"/>
+          </div>
+          <label for="">Correo Electronico:</label>
+          <div class="datos">
+              <input type="email" name="CorreoE" id="correo"
+              placeholder="Ingrese su Email" onclick="validaEmail()"/>           
+          </div>
+          <div>
+          <br>
+          <button type="submit" onclick="EnviarDatos()">Enviar Datos</button>
+        </div>
+      </form>
+      <script src="Validacion.js"></script>
+    </main>
+  </body>
+  </html>
